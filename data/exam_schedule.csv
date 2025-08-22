@@ -1,0 +1,6 @@
+class,subject,exam_name,exam_type,exam_date,start_time,duration_mins,location,syllabus_topics,notes
+10,Math,Midterm Math Paper,Midterm,2025-10-21,09:00,120,Room 201,"Algebra, Quadratic Equations, Coordinate Geometry",Carry calculators (non-programmable).
+10,English,Final English Paper,Final,2025-12-05,11:30,120,Auditorium A,"Reading Comprehension, Essay, Grammar",Bring blue/black pens only.
+9,Science,Unit Test 2,Unit Test,2025-09-18,08:30,60,Lab 2,"Motion & Forces, Work & Energy",No calculators allowed.
+8,History,Midterm History,Midterm,2025-10-15,10:00,90,Room 104,"Industrial Revolution, World Wars Overview",Map-based questions included.
+7,Computer Science,Final CS Paper,Final,2025-12-10,13:00,120,Lab 1,"Loops, Functions, Basic Data Structures",Submit project code on LMS by exam day.

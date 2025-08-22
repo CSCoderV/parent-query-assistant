@@ -1,0 +1,6 @@
+class,subject,quiz_name,exam_type,quiz_date,start_time,duration_mins,location,syllabus_topics,notes
+10,Math,Algebra Quiz,Quiz,2025-09-02,09:30,20,Room 201,"Linear Equations, Factorization",Short-answer only.
+9,Science,Forces & Motion Quiz,Quiz,2025-09-09,10:15,15,Lab 2,"Newton's Laws, Friction",MCQs only.
+8,English,Grammar Drill Quiz,Quiz,2025-09-05,11:00,15,Room 105,"Tenses, Subject-Verb Agreement",Bring pencils.
+7,History,Map Skills Quiz,Quiz,2025-09-12,12:30,10,Room 103,Europe & Asia Political Maps,Atlas allowed.
+7,Computer Science,Loops Basics Quiz,Quiz,2025-09-16,14:00,10,Lab 1,for/while loops,No computers; pen-paper quiz.

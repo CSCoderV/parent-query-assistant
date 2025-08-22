@@ -4,13 +4,15 @@ from semantic_intent import SemanticIntentMatcher
 import pandas as pd
 from sentence_transformers import SentenceTransformer, util
 import torch
+import glob
+from datetime import datetime
 
 # loading of req/necessary data
 df = pd.read_csv("../data/parent_queries_dataset.csv")
 intent_examples = df.groupby("intent")["query"].apply(list).to_dict()
 matcher = SemanticIntentMatcher(intent_examples)
 student_df = pd.read_csv("../data/student_records.csv")
-
+ALL_NAMES = [n.lower() for n in student_df["student_name"].astype(str)]
 #loading dataset (default dataset where user can add their own queries)
 default_database_df =pd.read_csv("../data/default_database.csv")
 default_database_queries=default_database_df["query"].tolist()
@@ -29,7 +31,7 @@ def find_student_records(student_name,class_name=None,subject=None):
         df=df[df["subject"].str.lower()==subject.lower()]
     return df.to_dict(orient="records")
 
-#searching  for best answwer from the dataset using similarity
+#searching  for best answwer from the dataset using similarity (ie similar Qs)
 def find_best_default_database_answer(user_query):
     user_embedding = model.encode(user_query, convert_to_tensor=True)
     scores = util.cos_sim(user_embedding, default_database_embeddings)
@@ -38,7 +40,7 @@ def find_best_default_database_answer(user_query):
 
 last_context = {"student_name": None, "class_name": None, "subject": None}
 
-# for testing
+# for testing/ running program
 while True:
     input1 = input("\nHello! How can I help you? (Type 'quit' to exit): ")
     if input1.lower() in ["quit","exit","q","e"]:
@@ -47,20 +49,20 @@ while True:
 
     intent, prediction_score = matcher.predict(input1)
     print(f"Intent: {intent} (confidence: {prediction_score:.1f})")
-    
-
-    if "marks" in input1.lower() :
-        intent=['get_marks']
-    elif "attendance" in input1.lower():
-        intent=['get_attendance']
-    else:
-        intent=[intent]
-
+    if prediction_score<0.60:
+        print("I can help with marks, attendance, or exam schedule. Which one did you mean?")
+        continue
+    intent = [intent]
     handled=False
 
     class_name=extract_class(input1)
     subject=extract_subjects(input1)
-    student_name=extract_name(input1)
+    student_name = None
+    for i in ALL_NAMES:
+        if i in input1.lower():
+            student_name = i.capitalize()
+            break
+    #tring a fallback approach (ie if no name specified then it tries using the last name used in program)
     if student_name:
         last_context["student_name"]=student_name
     if class_name:
@@ -73,25 +75,35 @@ while True:
 
 
     if student_name:
-        results=find_student_records(student_name, class_name, subject)
+        results = find_student_records(student_name, class_name, subject)
         if results:
             for i in results:
                 for current_intent in intent:
-                    if current_intent=="get_marks":
-                        print(f"{i['student_name']} scored {i['marks']} in {i['subject']}")
+                    if current_intent == 'get_marks':
+                        print(
+                            f"{i['student_name']} scored {i.get('marks','--')} in {i.get('subject','--')}"
+                            + (f" in {i.get('exam_name')}" if i.get('exam_name') else "")
+                        )
                         handled=True
-                    elif current_intent=="get_attendance":
-                        print(f"{i['student_name']}'s attendance in {i['subject']} is {i['attendance']}")
+                    elif current_intent == 'get_attendance':
+                        print(f"{i['student_name']}'s attendance is {i.get('attendance','--')}")
                         handled=True
-                    elif current_intent=="get_homework":
-                        print(f"Class {i['class']} has the following HW assigned: {i['homework']}")
+                    elif current_intent == 'get_homework':
+                        print(f"Class {i.get('class','--')} has following homework assigned: {i.get('homework','--')}")
+                        handled=True
+                    elif current_intent == 'get_exam_schedule':
+                        print(f"Class {i.get('class','--')} has the following upcoming exams: {i.get('exam_schedule','--')}")
+                        handled=True
+                    elif current_intent == 'get_quiz_schedule':
+                        print(f"Class {i.get('class','--')} has the following quizzes scheduled: {i.get('quiz_schedule','--')}")
                         handled=True
                     else:
-                        print(f"Record for {i['student_name']} in {i['subject']}, class {i['class']}")
+                        print(f"Record for {i['student_name']} is available. Please specify the reason to access the record")
                         handled=True
         else:
-            print("No student specified in your query.")
+            print(f"No records found for {student_name}"+(f" in {subject}" if subject else "")+(f" (Class {class_name})" if class_name else ""))
+
             handled=True
     if not handled:
-        print("No direct record found, checking general knowledge base...")
+        print("No record found, checking general knowledge base...")
         print("Assistant:", find_best_default_database_answer(input1))
