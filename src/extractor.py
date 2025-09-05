@@ -28,12 +28,18 @@ def extract_name(text):
 def extract_subjects(text):
     subjects = ['math', 'mathematics', 'eng', 'english', 'science', 'history',
                 'social studies', 'sst', 'geography', 'economics', 'biology',
-                'chemistry', 'physics', 'comp sci', 'computer science', 'marathi']
+                'chemistry', 'physics', 'comp sci', 'computer science', 'spanish','french','german']
     subjects = [subject.lower() for subject in subjects]
     for i in subjects:
         if i.lower() in text.lower():
             return i.capitalize()
     return None
+
+def extract_exam_types(text):
+    exam_types=['unit test','unit exam','midterm','final exam','finals','quiz','test','exam']
+    for i in exam_types:
+        if i.lower in text.lower():
+            return i.capitalize()
 
 def extract_month(text):
     months = ['january', 'february', 'march', 'april', 'may', 'june',

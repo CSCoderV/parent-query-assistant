@@ -1,51 +1,51 @@
 student_name,class,subject,marks,attendance,exam_type
-Tanvi,7,hindi,91,81%,Unit Test
-Meera,9,hindi,57,100%,Unit Test
-Tanvi,10,math,96,83%,Unit Test
-Aarav,9,english,47,89%,Unit Test
-Aarav,9,english,98,87%,Final
-Rahul,6,sst,47,76%,Unit Test
-Tanvi,10,hindi,53,82%,Unit Test
-Meera,6,sst,73,86%,Midterm
-Tanvi,10,math,64,92%,Midterm
-Meera,10,hindi,50,76%,Quiz
-Simran,8,hindi,59,88%,Final
-Simran,6,sst,96,80%,Final
-Aarav,10,english,66,95%,Unit Test
-Meera,9,hindi,74,98%,Final
-Aarav,6,sst,45,79%,Unit Test
-Aarav,6,sst,83,87%,Final
-Tanvi,6,science,96,77%,Final
-Meera,6,science,51,96%,Midterm
-Simran,8,science,42,92%,Unit Test
-Rahul,9,hindi,43,86%,Unit Test
-Aarav,9,english,85,96%,Unit Test
-Aarav,8,hindi,80,81%,Unit Test
-Meera,6,sst,55,100%,Unit Test
-Aarav,7,hindi,71,89%,Quiz
-Meera,9,english,63,94%,Final
-Aarav,6,sst,76,84%,Unit Test
-Tanvi,7,hindi,78,81%,Midterm
-Tanvi,7,english,93,100%,Midterm
-Meera,6,english,68,94%,Unit Test
-Simran,10,english,48,76%,Midterm
-Rahul,10,english,100,83%,Unit Test
-Simran,10,hindi,78,79%,Unit Test
-Meera,10,english,83,78%,Midterm
-Tanvi,6,english,51,75%,Unit Test
-Simran,8,science,75,79%,Unit Test
-Meera,9,science,73,82%,Unit Test
-Tanvi,9,sst,49,78%,Unit Test
-Aarav,7,english,70,94%,Unit Test
-Tanvi,9,science,81,85%,Unit Test
-Simran,7,english,83,79%,Unit Test
-Simran,10,math,80,93%,Midterm
-Tanvi,6,sst,65,89%,Final
-Aarav,8,english,79,91%,Unit Test
-Meera,9,hindi,90,100%,Quiz
-Rahul,9,sst,47,80%,Final
-Meera,6,english,45,92%,Midterm
-Rahul,9,hindi,96,76%,Quiz
-Tanvi,10,science,40,78%,Final
-Aarav,8,science,58,83%,Midterm
-Simran,6,english,88,84%,Quiz
+Emma,7,english,91,81%,Unit Test
+Ava,9,english,57,100%,Unit Test
+Emma,10,math,96,83%,Unit Test
+Liam,9,english,47,89%,Unit Test
+Liam,9,english,98,87%,Final
+Noah,6,social studies,47,76%,Unit Test
+Emma,10,english,53,82%,Unit Test
+Ava,6,social studies,73,86%,Midterm
+Emma,10,math,64,92%,Midterm
+Ava,10,english,50,76%,Quiz
+Olivia,8,english,59,88%,Final
+Olivia,6,social studies,96,80%,Final
+Liam,10,english,66,95%,Unit Test
+Ava,9,english,74,98%,Final
+Liam,6,social studies,45,79%,Unit Test
+Liam,6,social studies,83,87%,Final
+Emma,6,science,96,77%,Final
+Ava,6,science,51,96%,Midterm
+Olivia,8,science,42,92%,Unit Test
+Noah,9,english,43,86%,Unit Test
+Liam,9,english,85,96%,Unit Test
+Liam,8,english,80,81%,Unit Test
+Ava,6,social studies,55,100%,Unit Test
+Liam,7,english,71,89%,Quiz
+Ava,9,english,63,94%,Final
+Liam,6,social studies,76,84%,Unit Test
+Emma,7,english,78,81%,Midterm
+Emma,7,english,93,100%,Midterm
+Ava,6,english,68,94%,Unit Test
+Olivia,10,english,48,76%,Midterm
+Noah,10,english,100,83%,Unit Test
+Olivia,10,english,78,79%,Unit Test
+Ava,10,english,83,78%,Midterm
+Emma,6,english,51,75%,Unit Test
+Olivia,8,science,75,79%,Unit Test
+Ava,9,science,73,82%,Unit Test
+Emma,9,social studies,49,78%,Unit Test
+Liam,7,english,70,94%,Unit Test
+Emma,9,science,81,85%,Unit Test
+Olivia,7,english,83,79%,Unit Test
+Olivia,10,math,80,93%,Midterm
+Emma,6,social studies,65,89%,Final
+Liam,8,english,79,91%,Unit Test
+Ava,9,english,90,100%,Quiz
+Noah,9,social studies,47,80%,Final
+Ava,6,english,45,92%,Midterm
+Noah,9,english,96,76%,Quiz
+Emma,10,science,40,78%,Final
+Liam,8,science,58,83%,Midterm
+Olivia,6,english,88,84%,Quiz

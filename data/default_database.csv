@@ -1,10 +1,10 @@
 id,query,answer
-1,Who is the class teacher of class 6?,The class teacher of class 6 is Mrs. Sharma.
-2,When is the PTM for class 6?,The PTM for class 6 is scheduled in August.
-3,What are the fees for class 7 next year?,"The fees for class 7 in 2025 are ₹45,000."
-4,Who teaches class 9?,Mr. Verma is the class teacher for class 9.
-5,What is the fee structure for class 8?,"The current fee for class 8 is ₹40,000."
-6,When is the next PTM for class 9?,The next PTM for class 9 is in September.
+1,Who is the class teacher of grade 6?,The class teacher of grade 6 is Mrs. Sharma.
+2,When is the PTM for grade 6?,The PTM for grade 6 is scheduled in August.
+3,What are the fees for grade 7 next year?,"The fees for grade 7 in 2025 are $45,000."
+4,Who teaches grade 9?,Mr. Verma is the class teacher for grade 9.
+5,What is the fee structure for grade 8?,"The current fee for grade 8 is $40,000."
+6,When is the next PTM for grade 9?,The next PTM for grade 9 is in September.
 7,Can I pay fees online?,"Yes, fees can be paid through the online parent portal."
 8,When is the school closed for holidays?,The school is closed for winter holidays in December.
 9,What is the dress code for PTM?,There is no formal dress code for PTM. Casuals are fine.
@@ -14,7 +14,7 @@ id,query,answer
 13,What are the library timings?,The library is open from 8 AM to 3 PM on all working days.
 14,Is there a bus facility for students?,"Yes, the school provides bus facility for most localities."
 15,How can I meet the principal?,You can meet the principal on Fridays between 10 AM to 12 PM.
-16,What is the syllabus for class 10 math?,"Class 10 math covers algebra, geometry, and trigonometry."
+16,What is the syllabus for grade 10 math?,"Grade 10 math covers algebra, geometry, and trigonometry."
 17,Who is the head of the science department?,Mr. Rakesh is the head of the science department.
 18,What is the admission process?,Admission forms are available online and at the school reception.
 19,Are there extracurricular activities?,"Yes, we offer dance, music, art, and various sports activities."
@@ -23,7 +23,7 @@ id,query,answer
 22,What are the rules for school uniform?,Students must wear the prescribed school uniform on all days.
 23,When is the science fair?,The science fair is organized in October every year.
 24,Is there a parent orientation program?,"Yes, it is conducted at the start of each session in April."
-25,What languages are taught?,"English, Hindi, and Sanskrit are taught from class 1 onwards."
+25,What languages are taught?,"English, English, and Sanskrit are taught from grade 1 onwards."
 26,Who supervises the computer lab?,Mrs. Neha supervises the computer lab sessions.
 27,When are the inter-school competitions?,They are usually held between September and November.
 28,How can I update my contact information?,Submit a written request to the admin office to update contact details.
@@ -31,7 +31,7 @@ id,query,answer
 30,Is there a PTA body?,"Yes, there is an active PTA that meets every quarter."
 31,Who coordinates the art club?,The art club is coordinated by Mrs. Sen.
 32,Is there a robotics club?,"Yes, we have a robotics club for classes 6 and above."
-33,How many students are there in class 10?,Class 10 currently has 48 students enrolled.
+33,How many students are there in grade 10?,Grade 10 currently has 48 students enrolled.
 34,When is the school picnic?,The school picnic is planned in February.
 35,What is the timing of morning assembly?,Morning assembly starts at 7:50 AM daily.
 36,Can parents volunteer for events?,"Yes, parents are encouraged to volunteer for school events."
@@ -39,7 +39,7 @@ id,query,answer
 38,Are there any scholarships?,"Yes, merit scholarships are awarded to top-performing students."
 39,What is the school's motto?,Our motto is 'Knowledge is Power'.
 40,When are half-yearly exams conducted?,Half-yearly exams are usually in September.
-41,Is swimming taught at school?,"Yes, swimming classes are available for class 4 and above."
+41,Is swimming taught at school?,"Yes, swimming classes are available for grade 4 and above."
 42,Who manages the library?,The library is managed by Mrs. Patil.
 43,How do I pay for the school uniform?,Uniforms are purchased separately from the approved vendor.
 44,Is there a cafeteria?,"Yes, the school cafeteria serves snacks and meals during recess."
@@ -48,4 +48,39 @@ id,query,answer
 47,Who runs the dance club?,The dance club is managed by Mrs. Joshi.
 48,What kind of sports are offered?,"We offer football, basketball, cricket, and badminton."
 49,Is there an alumni network?,"Yes, we have an alumni association that meets annually."
-50,When is the farewell for class 12?,The farewell for class 12 is organized in March.
+50,When is the farewell for grade 12?,The farewell for grade 12 is organized in March.
+51,school timings,"School hours are 8:00 AM to 3:00 PM, Monday through Friday."
+52,what time does school start,"School hours are 8:00 AM to 3:00 PM, Monday through Friday."
+53,when does school end,"School hours are 8:00 AM to 3:00 PM, Monday through Friday."
+54,school hours,"School hours are 8:00 AM to 3:00 PM, Monday through Friday."
+55,school schedule time,"School hours are 8:00 AM to 3:00 PM, Monday through Friday."
+56,school address,"The school address is 123 Maple Street, Arlington, TX 76010."
+57,what is the address,"The school address is 123 Maple Street, Arlington, TX 76010."
+58,where is the school located,"The school address is 123 Maple Street, Arlington, TX 76010."
+59,school location,"The school address is 123 Maple Street, Arlington, TX 76010."
+60,campus address,"The school address is 123 Maple Street, Arlington, TX 76010."
+61,how to pay fees,Tuition for each grade is listed on the school website. Payments can be made online via the parent portal or at the office.
+62,fee payment options,Tuition for each grade is listed on the school website. Payments can be made online via the parent portal or at the office.
+63,pay tuition online,Tuition for each grade is listed on the school website. Payments can be made online via the parent portal or at the office.
+64,where to pay fees,Tuition for each grade is listed on the school website. Payments can be made online via the parent portal or at the office.
+65,tuition payment process,Tuition for each grade is listed on the school website. Payments can be made online via the parent portal or at the office.
+66,when are midterms,Midterms are held in October and Finals in May. Unit tests occur twice each semester.
+67,finals month,Midterms are held in October and Finals in May. Unit tests occur twice each semester.
+68,how often are unit tests,Midterms are held in October and Finals in May. Unit tests occur twice each semester.
+69,exam months,Midterms are held in October and Finals in May. Unit tests occur twice each semester.
+70,attendance requirement,A minimum of 75% attendance is required to sit for final exams.
+71,minimum attendance,A minimum of 75% attendance is required to sit for final exams.
+72,how much attendance needed,A minimum of 75% attendance is required to sit for final exams.
+73,attendance rule,A minimum of 75% attendance is required to sit for final exams.
+74,where to find homework,Homework is posted in the LMS by 4:00 PM each weekday.
+75,homework posting time,Homework is posted in the LMS by 4:00 PM each weekday.
+76,homework platform,Homework is posted in the LMS by 4:00 PM each weekday.
+77,when is homework posted,Homework is posted in the LMS by 4:00 PM each weekday.
+78,library hours,The library is open from 8:00 AM to 5:00 PM. Students may check out up to 3 books for 2 weeks.
+79,how many books can i borrow,The library is open from 8:00 AM to 5:00 PM. Students may check out up to 3 books for 2 weeks.
+80,library policy,The library is open from 8:00 AM to 5:00 PM. Students may check out up to 3 books for 2 weeks.
+81,library timings,The library is open from 8:00 AM to 5:00 PM. Students may check out up to 3 books for 2 weeks.
+82,dress code,The dress code requires solid-color tops and closed-toe shoes; see the handbook for details.
+83,what to wear,The dress code requires solid-color tops and closed-toe shoes; see the handbook for details.
+84,uniform rules,The dress code requires solid-color tops and closed-toe shoes; see the handbook for details.
+85,school dress policy,The dress code requires solid-color tops and closed-toe shoes; see the handbook for details.
